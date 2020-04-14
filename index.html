@@ -14,6 +14,7 @@
 </script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 </script>
+<script src="https://use.fontawesome.com/998a965bb4.js"></script>
 <title>Hello, world!</title>
 </head>
 
@@ -47,7 +48,8 @@
     </nav>
 
 
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <div class="container-md">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -56,78 +58,134 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-interval="10000">
-                    <img src="https://i.pinimg.com/originals/eb/f0/02/ebf002d6348c3ae432649da4418fce40.jpg" class="d-block w-100" alt="...">
+                    <img src="banner.png" class="d-block w-100" alt="fisrt label">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>First slide label</h5>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-interval="10000">
-                    <img src="https://i.pinimg.com/originals/eb/f0/02/ebf002d6348c3ae432649da4418fce40.jpg" class="d-block w-100" alt="...">
+                    <img src="banner.png" class="d-block w-100" alt="second label">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Second slide label</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-interval="10000">
-                    <img src="https://i.pinimg.com/originals/eb/f0/02/ebf002d6348c3ae432649da4418fce40.jpg" class="d-block w-100" alt="...">
+                    <img src="banner.png" class="d-block w-100" alt="third label">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Third slide label</h5>
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
         </div>
     </div>
 
-    <div class="jumbotron">
+    <div class="jumbotron" id="intro">
         <div class="container-md">
             <h1 class="display-4">Hello, world!</h1>
             <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
             <hr class="my-4">
             <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-
-
-
-
+            <a class="btn btn-light btn-lg" href="#" role="button">Learn more</a>
         </div>
 
     </div>
 
 
-
-
-
+    <!-- pager indicator -->
     <nav aria-label="...">
-        <ul class="pagination justify-content-center">
+        <ul class="pagination justify-content-center ">
             <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
             </li>
-            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item" aria-current="page">
-                <span class="page-link">
-          2
-          <span class="sr-only">(current)</span>
-                </span>
+            <li class="page-item active"><span class="page-link">1<span class="sr-only">(current)</span></span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
             </li>
             <li class="page-item"><a class="page-link" href="#">3</a></li>
             <li class="page-item">
-                <a class="page-link" href="#">Next</a>
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
             </li>
         </ul>
     </nav>
 
     </div>
 
+    <div class="jumbotron" id="footer">
+        <div class="container-md">
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4 bg-white">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color-dark pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1">
+                        <i class="fab fa-twitter"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-gplus mx-1">
+                        <i class="fab fa-google-plus-g"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-li mx-1">
+                        <i class="fab fa-linkedin-in"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-dribbble mx-1">
+                        <i class="fab fa-dribbble"> </i>
+                    </a>
+                </li>
+            </ul>
+            <!-- Social buttons -->
+
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+    <script src="functions.js">
+    </script>
 </body>
 
 </html>
